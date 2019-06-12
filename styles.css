@@ -87,7 +87,6 @@ footer {
     padding: 58px 0 0;
     font-family: arial, helvetica, sans-serif;
     line-height: 1.5em;
-    /* color: white; */
 }
 
 footer p, footer ul, footer a, footer .btn {
@@ -155,12 +154,12 @@ footer .last {
     display: block;
     width: 155px;
     height: 41px;
-    background: url("https://www.proxibid.com/images/footer-logo-proxibid.png") top left no-repeat;
+    background: url("logo_small.png") top left no-repeat;
     text-indent: -9999px;
     margin-bottom: 30px;
 }
 
-#emailsignup a, #helpfullinks .list-items, #poweredby a, .social p {
+#emailsignup a, #helpfullinks .list-items a, #poweredby a, .social p {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
 }
@@ -198,10 +197,6 @@ footer .last {
     font-size: 21px;
     margin: 0 0 14px;
 }
-/* 
-#helpfullinks .list-items {
-    color: #FFF;
-} */
 
 #helpfullinks ul {
     list-style-type: none;
