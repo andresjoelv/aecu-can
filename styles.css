@@ -71,6 +71,47 @@ body {
     text-shadow: 2px 2px 4px #000000;
 }
 
+/*=================
+  Body
+ *Slogan
+  =================*/
+.container-slogan {
+    color: white;   
+    background: rgb(235, 53, 53);
+}
+
+.container-slogan-text {
+    padding-top: 18px;
+}
+.container-slogan .imagen {
+    text-align: right;
+}
+
+.container-slogan .imagen img {
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-slogan .imagen .frame {
+    height: 220px;      
+    white-space: nowrap;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.container-slogan .imagen .frame .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.container-slogan .imagen .frame img {
+    background: #3A6F9A;
+    vertical-align: middle;
+    max-height: 220px;
+}
+
 /**
  * Fat Footer
  -----------------------------*/
