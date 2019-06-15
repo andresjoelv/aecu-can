@@ -3,12 +3,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
+/* navigation */
+.navbar-navigation {
     overflow: hidden;
     background-color: #333;
 }
 
-.navbar a {
+.navbar-navigation a {
     float: left;
     font-size: 16px;
     color: white;
@@ -17,36 +18,36 @@ body {
     text-decoration: none;
 }
 
-.dropdown {
+.dropdown-navigation {
     float: left;
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown-navigation .dropbtn-navigation {
     font-size: 16px;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: #333;
+    background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar-navigation a:hover, .dropdown-navigation:hover .dropbtn-navigation {
     background-color: red;
 }
 
-.dropdown-content {
+.dropdown-content-navigation {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
-.dropdown-content a {
+.dropdown-content-navigation a {
     float: none;
     color: black;
     padding: 12px 16px;
@@ -55,11 +56,11 @@ body {
     text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content-navigation a:hover {
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-navigation:hover .dropdown-content-navigation {
     display: block;
 }
 
@@ -75,14 +76,16 @@ body {
   Body
  *Slogan
   =================*/
+
 .container-slogan {
-    color: white;   
+    color: white;
     background: rgb(235, 53, 53);
 }
 
 .container-slogan-text {
     padding-top: 18px;
 }
+
 .container-slogan .imagen {
     text-align: right;
 }
@@ -94,7 +97,7 @@ body {
 }
 
 .container-slogan .imagen .frame {
-    height: 220px;      
+    height: 220px;
     white-space: nowrap;
     text-align: center;
     margin: 1em 0;
@@ -292,7 +295,7 @@ footer .last {
 }
 
 .social p {
-    margin-top:30px;
+    margin-top: 30px;
     text-align: center;
 }
 
