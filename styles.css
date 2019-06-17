@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
 body {
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* navigation */
+
 .navbar-navigation {
     overflow: hidden;
     background-color: #333;
@@ -74,45 +76,75 @@ body {
 
 /*=================
   Body
- *Slogan
+ * Portada
   =================*/
 
+.portada {
+    margin-top: 35px;
+}
+
 .container-slogan {
-    color: white;
-    background: rgb(235, 53, 53);
+    color: rgb(141, 136, 136);
+    font-size: 14px;
+    /* 14px looks good too */
+    /* background: rgb(235, 53, 53); */
 }
 
 .container-slogan-text {
-    padding-top: 18px;
+    padding-left: 40px;
 }
 
-.container-slogan .imagen {
+.container-slogan-text h2 {
+    color: rgb(52, 53, 61);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.container-slogan .mov-humana {
     text-align: right;
 }
 
-.container-slogan .imagen img {
+.container-slogan .mov-humana img {
     vertical-align: middle;
     border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.container-slogan .imagen .frame {
+.container-slogan .mov-humana .frame {
     height: 220px;
     white-space: nowrap;
     text-align: center;
     margin: 1em 0;
 }
 
-.container-slogan .imagen .frame .helper {
+.container-slogan .mov-humana .frame .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
 
-.container-slogan .imagen .frame img {
+.container-slogan .mov-humana .frame img {
     background: #3A6F9A;
     vertical-align: middle;
     max-height: 220px;
+}
+
+/* paralax */
+
+.parallax {
+    /* The image used */
+    background-image: url("img/diversity.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.diversity {
+    padding: 40px 0px;
 }
 
 /**
@@ -174,6 +206,9 @@ footer .content {
 }
 
 @media screen and (max-width: 768px) {
+    #log-movilidad-humana {
+        display: none;
+    }
     footer .content {
         padding: 0 10px;
     }
