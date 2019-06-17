@@ -92,6 +92,7 @@ body {
 
 .container-slogan-text {
     padding-left: 40px;
+    padding-bottom: 20px;
 }
 
 .container-slogan-text h2 {
@@ -133,7 +134,7 @@ body {
 
 .parallax {
     /* The image used */
-    background-image: url("img/diversity.jpg");
+    background-image: url("img/barrio_penas_guayaquil.jpg");
     /* Set a specific height */
     min-height: 500px;
     /* Create the parallax scrolling effect */
@@ -141,10 +142,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.diversity {
-    padding: 40px 0px;
 }
 
 /**
