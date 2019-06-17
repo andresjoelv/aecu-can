@@ -91,12 +91,11 @@ body {
 }
 
 .container-slogan-text {
-    padding-left: 40px;
     padding-bottom: 20px;
 }
 
 .container-slogan-text h2 {
-    color: rgb(52, 53, 61);
+    color: rgb(90, 87, 117);
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -128,6 +127,7 @@ body {
     background: #3A6F9A;
     vertical-align: middle;
     max-height: 220px;
+    max-width: 200px;
 }
 
 /* parallax */
@@ -203,7 +203,7 @@ footer .content {
 }
 
 @media screen and (max-width: 768px) {
-    #log-movilidad-humana {
+    .log-movilidad-humana {
         display: none;
     }
     footer .content {
