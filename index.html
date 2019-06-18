@@ -6,44 +6,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/all.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="test2.css"> -->
 </head>
 
 <body>
     <!-- nav -->
-    <header>
-        <div id="logo">
-            <a title="home">
-                <img src="img/logo_small.png" />
-            </a>
-        </div>
-        <div>
-            <ul>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-            </ul>
-        </div>
-        <div class="navbar-navigation">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <div class="dropdown-navigation">
-                <button class="dropbtn-navigation">Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content-navigation">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+    <header class="cd-auto-hide-header">
+        <!-- <div class="top-menu">
+            <div class="top-menu-container">
+                <div class="left-container">
+                    <h6>
+                        <i class="fas fa-phone-alt"></i>
+                        <a>CA:555-555-5555</a>
+                        <span>|</span>
+                        <i class="fab fa-whatsapp"></i>
+                        <a>WHATSAPP:555-555-5555</a>
+                    </h6>
+                </div>
+                <div class="right-container">
+                    <h6>
+                        <a>REVIEWS</a>
+                        <span>|</span>
+                        <a>APPLICATION PROCESS</a>
+                        <span>|</span>
+                        <a>LINK WITH NAME HERE</a>
+                    </h6>
                 </div>
             </div>
+        </div> -->
+
+        <nav class="cd-primary-nav">
+            <a href="#cd-navigation" class="nav-trigger">
+                <span>
+                    <em aria-hidden="true"></em>
+                    Menu
+                </span>
+            </a> <!-- .nav-trigger -->
+
+            <ul id="cd-navigation">
+                <li><a href="#0">The team</a></li>
+                <li><a href="#0">Our Products</a></li>
+                <li><a href="#0">Our Services</a></li>
+                <li><a href="#0">Shopping tools</a></li>
+                <li><a href="#0">Contact Us</a></li>
+            </ul>
+        </nav> <!-- .cd-primary-nav -->
+        
+        <div class="cd-morph-dropdown">
+            <div class="box"></div>
+            <a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
+
+            <nav class="main-nav "> <!--cd-secondary-nav-->
+                <ul>
+                    <li class="has-dropdown gallery" data-content="about">
+                        <a href="#0">About</a>
+                    </li>
+
+                    <li class="has-dropdown links" data-content="pricing">
+                        <a href="#0">Pricing</a>
+                    </li>
+
+                    <li class="has-dropdown button" data-content="contact">
+                        <a href="#0">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="morph-dropdown-wrapper">
+                <div class="dropdown-list">
+                    <ul>
+                        <li id="about" class="dropdown gallery">
+                            <a href="#0" class="label">About</a>
+
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="#0">
+                                            <em>Title here</em>
+                                            <span>A brief description here</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#0">
+                                            <em>Title here</em>
+                                            <span>A brief description here</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#0">
+                                            <em>Title here</em>
+                                            <span>A brief description here</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#0">
+                                            <em>Title here</em>
+                                            <span>A brief description here</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li id="pricing" class="dropdown links">
+                            <a href="#0" class="label">Pricing</a>
+
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <h2>Services</h2>
+
+                                        <ul class="links-list">
+                                            <li><a href="#0">Logo Design</a></li>
+                                            <li><a href="#0">Branding</a></li>
+                                            <li><a href="#0">Web Design</a></li>
+                                            <li><a href="#0">iOS</a></li>
+                                            <li><a href="#0">Android</a></li>
+                                            <li><a href="#0">HTML/CSS/JS</a></li>
+                                            <li><a href="#0">Packaging</a></li>
+                                            <li><a href="#0">Mobile</a></li>
+                                            <li><a href="#0">UI/UX</a></li>
+                                            <li><a href="#0">Prototyping</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h2>Projects</h2>
+
+                                        <ul class="links-list">
+                                            <li><a href="#0">Logo Design</a></li>
+                                            <li><a href="#0">Branding</a></li>
+                                            <li><a href="#0">Web Design</a></li>
+                                            <li><a href="#0">iOS</a></li>
+                                            <li><a href="#0">Android</a></li>
+                                            <li><a href="#0">HTML/CSS/JS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li id="contact" class="dropdown button">
+                            <a href="#0" class="label">Contact</a>
+
+                            <div class="content">
+                                <ul class="links-list">
+                                    <li><a href="#0">Link #1</a></li>
+                                    <li><a href="#0">Link #2</a></li>
+                                    <li><a href="#0">Link #3</a></li>
+                                    <li><a href="#0">Link #4</a></li>
+                                    <li><a href="#0">Link #5</a></li>
+                                    <li><a href="#0">Link #6</a></li>
+                                </ul>
+
+                                <a href="#0" class="btn">Get in Touch</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bg-layer" aria-hidden="true"></div>
+                </div> <!-- dropdown-list -->
+            </div> <!-- morph-dropdown-wrapper -->
         </div>
+
     </header>
 
     <!-- carousel -->
@@ -242,11 +379,11 @@
                         <img src="gallery/9-exotism.jpg" alt="">
                         <img src="gallery/6-serrana-y-bebe.jpg" alt="">
                         <img src="gallery/8-amazon-girl.jpg" alt="">
-                        <img src="gallery/7-risa.jpg" alt="">                        
+                        <img src="gallery/7-risa.jpg" alt="">
                     </section>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-xs-12 col-md-8 blog-posts">
                     <p>Latest feature article</p>
                     <article>
@@ -290,7 +427,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Sidebar-->
+                 Sidebar
                 <div class="col-xs-12 col-md-4 category_sidebar">
                     <div>
                         <h3>Related articles</h3>
@@ -304,11 +441,12 @@
                         </nav>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <!-- footer -->
+    <div class="box"></div>
     <footer>
         <div class="content">
             <div id="emailsignup">
@@ -349,9 +487,11 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+    </script>
+    <script src="assets/js/main.js"></script> <!-- Resource jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
