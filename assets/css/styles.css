@@ -592,11 +592,11 @@ END MENU CODY HOUSE
     text-align: right;
 }
 
-.container-slogan .mov-humana img {
+/* .container-slogan .mov-humana img {
     vertical-align: middle;
     border-radius: 50%;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-}
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+} */
 
 .container-slogan .mov-humana .frame {
     height: 220px;
